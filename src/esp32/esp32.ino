@@ -1,22 +1,9 @@
-/**
- * ESP32C6 - Web Server for Sensor Data
- * 
- * Receives sensor data from Arduino Nano via Serial
- * and serves it via web server
- * 
- * Hardware Connections (via Level Shifter):
- *   RX (GPIO17) <- LV1 <- HV1 <- Arduino TX (D1)
- *   TX (GPIO16) -> LV2 -> HV2 -> Arduino RX (D0)
- *   3.3V -> Level Shifter LV
- *   GND -> Level Shifter GND
- */
-
-#include <WiFi.h>
+include <WiFi.h>
 #include <WebServer.h>
 
 // WiFi credentials
-const char* ssid = "Jacob's Galaxy Z Fold5";
-const char* password = "slmz159&";
+const char* ssid = "";
+const char* password = "";
 
 // Web server on port 80
 WebServer server(80);
