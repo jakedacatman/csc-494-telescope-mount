@@ -51,6 +51,7 @@ void setup() {
   display.display();
 
   stepper.setSpeed(0);
+  stepper.setMaxSpeed(1000);
 }
 
 void loop() {
